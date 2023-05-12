@@ -112,3 +112,13 @@ p {
     margin-bottom: 1rem;
     padding-top: 0;
 }
+
+.article-btn-group :nth-child(2){
+    display: block;
+    transform: translateX(2.5rem);
+    scale: 1.25;
+}
+
+.article-btn-group :nth-child(1){
+    transform: translateX(0.75rem);
+}
