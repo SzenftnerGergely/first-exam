@@ -1,3 +1,114 @@
+/* --- Reset --- */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
 body {
-    background-color: pink;
+    min-height: 100vh;
+    background-color: #ffeedf;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+img, picture, svg, video {
+    display: block;
+    max-width: 100%;
+}
+/* --- Reset --- */
+
+/* --- Variables --- */
+:root {
+    --bg-img-layer: -10;
+    --nav-layer: 10;
+    
+}
+
+strong {
+    font-weight: bold;
+}
+
+/* --- Variables --- */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0.75rem;
+    border-bottom: solid 1px #145434;
+    color: #145434;
+}
+
+.nav-text {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.nav-icon {
+    scale: 1.5;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 4rem 5rem;
+}
+
+.article-wrapper {
+    flex: 0 1 350px;
+    background-color: #145434;
+    color: #ffeedf;
+    margin: 2rem;
+    padding: 2rem;
+    position: relative;
+}
+
+.article-number {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-left: -0.75rem;
+    margin-top: -0.75rem;
+    color:#145434;
+    border: solid 1.5px #145434;
+    border-radius: 50%;
+    width: 2rem;
+    text-align: center;
+    background-color: #ffeedf;
+    font-size: 1.5rem;
+}
+
+h1 {
+    font-size: 2rem;
+    padding-bottom: 3rem;
+    border-bottom: solid 1px #ffeedf;
+}
+
+p {
+    padding: 0.25rem;
+}
+
+.article-btn-group {
+    position: absolute;
+    display: flex;
+    background-color: #ffeedf;
+    border: solid 1.5px #145434;
+    color: #145434;
+    padding: 0.5rem 3.5rem; 
+    align-items: center;
+    right: 0;
+    margin-right: -0.75rem;
+}
+
+.article-wrapper :nth-child(4) {
+    margin-bottom: 1rem;
+    padding-top: 0;
 }
